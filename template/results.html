@@ -1,0 +1,8 @@
+<h1>Uploaded Images</h1>
+<a href="{{ url_for('index') }}">Back</a><p>
+<a href="{{ url_for('classify') }}">Sort Images</a><p>
+<ul>
+{% for file_url in file_urls %}
+    <img style="width: 300px" src="{{ file_url }}">
+{% endfor %}
+</ul>
